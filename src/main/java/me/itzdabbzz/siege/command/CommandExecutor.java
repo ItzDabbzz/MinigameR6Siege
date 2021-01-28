@@ -1,0 +1,57 @@
+package me.itzdabbzz.siege.command;
+
+
+
+import me.itzdabbzz.siege.command.argument.ArgumentType;
+import me.itzdabbzz.siege.command.argument.Default;
+import me.itzdabbzz.siege.command.argument.Optional;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+/**
+ * A method of a command class annotated with {@code CommandExecutor} is the
+ * command class's executor method, which is called to execute the command.
+ * <p>
+ * A command class's executor method must take at least one parameter, which
+ * is the {@link org.bukkit.command.CommandSender} that issued the command call.
+ * If the command is player-only, the parameter may be of the
+ * {@link org.bukkit.entity.Player} type to avoid casts, for example. The method
+ * can take extra parameters, which will be treated as command arguments:
+ * argument parsing and tab-completion will be managed by the command framework,
+ * based on the types and annotations of those extra parameters, and on the
+ * {@link ArgumentType} that
+ * the command's {@link CommandHandler} binds to the type of each one of those
+ * parameters (see {@link CommandHandler#getArgumentTypes()}). If there is no
+ * {@code ArgumentType} bound to the parameter's type, the framework will look
+ * for an {@code ArgumentType} bound to one of the superclasses of the parameter's
+ * type when resolving or completing the argument represented by the parameter.
+ * If an {@code ArgumentType} could still not be found, an exception will be
+ * thrown. Be aware that when encountering a primitive data type, the framework
+ * will look for an {@code ArgumentType} bound to the wrapper class for that
+ * type, instead of looking for one bound to the primitive data type itself.
+ * <p>
+ * By default, arguments are required, which means that if they are not provided
+ * when calling the command, the command's usage message is sent to the command
+ * sender and the command's execution is aborted, but arguments can be made
+ * optional by annotating them with
+ * {@link Optional} or
+ * {@link Default}.
+ * <p>
+ * Executor methods may also take varargs. In this case, each remaining argument
+ * provided by the command sender will be resolved into the varargs parameter's
+ * component type and put into an array, which will be passed to the method.
+ * However, the varargs parameter must not be of a primitive component type, or
+ * exceptions will be thrown when executing the command. If one of those
+ * types is wanted, the wrapper class for it, for example {@link Boolean} for
+ * {@code boolean}, {@link Integer} for {@code int}, or {@link Double} for
+ * {@code double}, must be used.
+ *
+ * @see Command
+ */
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.METHOD)
+public @interface CommandExecutor {
+}

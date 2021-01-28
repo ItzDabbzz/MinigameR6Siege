@@ -1,0 +1,6 @@
+name: R6Siege
+version: ${project.version}
+main: me.itzdabbzz.siege.R6Siege
+api-version: 1.12.2
+authors: [ ItzDabbzz ]
+description: Rainbow Six Siege

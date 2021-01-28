@@ -1,0 +1,11 @@
+damage-hologram:
+  - "§c-{damage}"
+
+lang:
+  ACTIONBAR_TEXT: "§8>> §a{currentHealth}§7/§a{maxHealth} §8<<"
+  FORMAT_DAMAGE: "####.#"
+  FORMAT_HEALTH: "####.#"
+  FORMAT_MAX: "####.#"
+  GAMEMODE_SUCCESS: "§8» §fYour gamemode has been set to §b{type}§f."
+  GAMEMODE_SUCCESS_OTHERS: "§8» §fSuccessfully set gamemode of §b{player} §fto §b{type}§f."
+  GAMEMODE_SUCCESS_OTHERS_PLAYER: "§8» §fYour gamemode has been set to §b{type} §fby §b{player}§f."

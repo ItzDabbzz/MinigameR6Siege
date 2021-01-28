@@ -1,0 +1,291 @@
+#|--------------------------------------------------------------------------------------------------------------------|#
+###############\
+# Menus Setup ###########################################################\
+############### Here, you can customize the looks of all in-game menus. # \
+              ###########################################################  \
+main-menu:
+  title: "§b§lBank"
+  background:
+    type: "BLACK_STAINED_GLASS_PANE"
+    name: "§0"
+    amount: 1
+    lore:
+      - "§r"
+  head:
+    head: true
+    head-owner: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDY3ZGNlNDY0NTM0OWU0MWE3ZjM1Nzk3ZTJiOTI3OWUzNWE2NWY1ZTgxYTM0NDk2ODg1ZDI3MjY4ZjM2OTEzOSJ9fX0="
+    amount: 1
+    name: "§a§lBANK"
+    lore:
+      - "§8► §7{amount}§8/§7{max}"
+      - ""
+      - "§eClick §fto change bank."
+  withdraw:
+    type: "BUCKET"
+    name: "§e§lWITHDRAW"
+    amount: 1
+    lore:
+      - "§8► §fClick to withdraw money from bank."
+  deposit:
+    type: "WATER_BUCKET"
+    name: "§e§lDEPOSIT"
+    amount: 1
+    lore:
+      - "§8► §fClick to deposit money to bank."
+
+time-menu:
+  title: "§a§lPlayTime"
+  background:
+    type: "BLACK_STAINED_GLASS_PANE"
+    name: "§0"
+    amount: 1
+    lore:
+      - "§r"
+  head:
+    name: "§e%player"
+    lore:
+      - "§7Time of §e%player§7."
+  yesterday:
+    type: "BIRCH_SIGN"
+    name: "§eYesterday"
+    amount: 1
+    lore:
+      - "§8► §7%time"
+  daily:
+    type: "OAK_SIGN"
+    name: "§eToday"
+    amount: 1
+    lore:
+      - "§8► §7%time"
+  all:
+    type: "CLOCK"
+    name: "§eAll"
+    amount: 1
+    lore:
+      - "§8► §7%time"
+  weekly:
+    type: "JUNGLE_SIGN"
+    name: "§eWeekly"
+    amount: 1
+    lore:
+      - "§8► §7%time"
+  monthly:
+    type: "ACACIA_SIGN"
+    name: "§eMonthly"
+    amount: 1
+    lore:
+      - "§8► §7%time"
+
+deposit-menu:
+  title: "§b§lBank - Deposit"
+  background:
+    type: "BLACK_STAINED_GLASS_PANE"
+    name: "§0"
+    amount: 1
+    lore:
+      - "§r"
+  add-10:
+    type: "LIME_STAINED_GLASS_PANE"
+    name: "§a§lADD §a10"
+    amount: 1
+    lore:
+      - "§8► §fClick to deposit §e10$"
+  add-100:
+    type: "LIME_STAINED_GLASS_PANE"
+    name: "§a§lADD §a100"
+    amount: 1
+    lore:
+      - "§8► §fClick to deposit §e100$"
+  add-1000:
+    type: "LIME_STAINED_GLASS_PANE"
+    name: "§a§lADD §a1000"
+    amount: 1
+    lore:
+      - "§8► §fClick to deposit §e1000$"
+  add-10000:
+    type: "LIME_STAINED_GLASS_PANE"
+    name: "§a§lADD §a10000"
+    amount: 1
+    lore:
+      - "§8► §fClick to deposit §e10000$"
+  add-100000:
+    type: "LIME_STAINED_GLASS_PANE"
+    name: "§a§lADD §a100000"
+    amount: 1
+    lore:
+      - "§8► §fClick to deposit §e100000"
+  add-1000000:
+    type: "LIME_STAINED_GLASS_PANE"
+    name: "§a§lADD §a1000000"
+    amount: 1
+    lore:
+      - "§8► §fClick to deposit §e1000000"
+  add-10000000:
+    type: "LIME_STAINED_GLASS_PANE"
+    name: "§a§lADD §a10000000"
+    amount: 1
+    lore:
+      - "§8► §fClick to deposit §e10000000"
+  add-100000000:
+    type: "LIME_STAINED_GLASS_PANE"
+    name: "§a§lADD §a100000000"
+    amount: 1
+    lore:
+      - "§8► §fClick to deposit §e100000000"
+  add-all:
+    type: "LIME_STAINED_GLASS"
+    name: "§a§lADD §aALL"
+    amount: 1
+    lore:
+      - "§8► §fClick to deposit §eALL §fof your money."
+  add-custom:
+    type: "COMMAND_BLOCK"
+    name: "§a§lADD §aCustom"
+    amount: 1
+    lore:
+      - "§8► §fClick to deposit §eCustom §famount of money."
+
+
+withdraw-menu:
+  title: "§b§lBank - Withdraw"
+  background:
+    type: "BLACK_STAINED_GLASS_PANE"
+    name: "§0"
+    amount: 1
+    lore:
+      - "§r"
+  remove-10:
+    type: "RED_STAINED_GLASS_PANE"
+    name: "§c§lREMOVE §c10"
+    amount: 1
+    lore:
+      - "§8► §fClick to withdraw §e10$"
+  remove-100:
+    type: "RED_STAINED_GLASS_PANE"
+    name: "§c§lREMOVE §c100"
+    amount: 1
+    lore:
+      - "§8► §fClick to withdraw §e100$"
+  remove-1000:
+    type: "RED_STAINED_GLASS_PANE"
+    name: "§c§lREMOVE §c1000"
+    amount: 1
+    lore:
+      - "§8► §fClick to withdraw §e1000$"
+  remove-10000:
+    type: "RED_STAINED_GLASS_PANE"
+    name: "§c§lREMOVE §c10000"
+    amount: 1
+    lore:
+      - "§8► §fClick to withdraw §e10000$"
+  remove-100000:
+    type: "RED_STAINED_GLASS_PANE"
+    name: "§c§lREMOVE §c100000"
+    amount: 1
+    lore:
+      - "§8► §fClick to withdraw §e100000"
+  remove-1000000:
+    type: "RED_STAINED_GLASS_PANE"
+    name: "§c§lREMOVE §c1000000"
+    amount: 1
+    lore:
+      - "§8► §fClick to withdraw §e1000000"
+  remove-10000000:
+    type: "RED_STAINED_GLASS_PANE"
+    name: "§c§lREMOVE §c10000000"
+    amount: 1
+    lore:
+      - "§8► §fClick to withdraw §e10000000"
+  remove-100000000:
+    type: "RED_STAINED_GLASS_PANE"
+    name: "§c§lREMOVE §c100000000"
+    amount: 1
+    lore:
+      - "§8► §fClick to withdraw §e100000000"
+  remove-all:
+    type: "RED_STAINED_GLASS"
+    name: "§c§lREMOVE §cALL"
+    amount: 1
+    lore:
+      - "§8► §fClick to withdraw §eALL §fof your money."
+  remove-custom:
+    type: "COMMAND_BLOCK"
+    name: "§c§lREMOVE §cCustom"
+    amount: 1
+    lore:
+      - "§8► §fClick to withdraw §eCustom §famount of money."
+
+banks-menu:
+  title: "§b§lBank - Bank Type"
+  background:
+    type: "BLACK_STAINED_GLASS_PANE"
+    name: "§0"
+    amount: 1
+    lore:
+      - "§r"
+  ONE:
+    type: "SOUL_SAND"
+    name: "§7§lORDINARY §7Account"
+    amount: 1
+    lore:
+      - "§7Max. Amount §8► §f{max}"
+  TWO:
+    type: "DIRT"
+    name: "§f§lCOMMON §fAccount"
+    amount: 1
+    lore:
+      - "§7Max. Amount §8► §f{max}"
+      - "§7Cost §8► §f{cost}"
+      - "§7Perm §8► §f{perm}"
+  THREE:
+    type: "GRASS"
+    name: "§e§lUNCOMMON §eAccount"
+    amount: 1
+    lore:
+      - "§7Max. Amount §8► §f{max}"
+      - "§7Cost §8► §f{cost}"
+      - "§7Perm §8► §f{perm}"
+  FOUR:
+    type: "CHEST"
+    name: "§b§lEPIC §bAccount"
+    amount: 1
+    lore:
+      - "§7Max. Amount §8► §f{max}"
+      - "§7Cost §8► §f{cost}"
+      - "§7Perm §8► §f{perm}"
+  FIVE:
+    type: "ENDER_CHEST"
+    name: "§d§lLEGENDARY §dAccount"
+    amount: 1
+    lore:
+      - "§7Max. Amount §8► §f{max}"
+      - "§7Cost §8► §f{cost}"
+      - "§7Perm §8► §f{perm}"
+
+back-menu:
+  title: "§8> §b/back"
+  background:
+    type: "BLACK_STAINED_GLASS_PANE"
+    name: "§0"
+  last-location:
+    type: "GLOWSTONE_DUST"
+    name: "§eLast location"
+    lore:
+      - "§fClick to teleport to your last location."
+  death-location:
+    type: "REDSTONE"
+    name: "§cDeath location"
+    lore:
+      - "§fClick to teleport to your death location."
+
+warp-menu:
+  title: "§8> §bWarps"
+  background:
+    type: "BLACK_STAINED_GLASS_PANE"
+    name: "§0"
+  warp-item:
+    type: "PAPER"
+    name: "§e{warp}"
+    lore:
+      - "§fClick to be teleported to"
+      - "§e{warp}§f."
